@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import axios from "axios";
-import './ChatGPTStyle.css';  // Import the CSS file
+import './OpenAIChat.css'; 
 import drpepeailogo from '../assets/drpepeai-logo.svg'
 
 const OpenAIChat = () => {
@@ -30,7 +32,7 @@ const OpenAIChat = () => {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer REACT_APP_OPENAI_API_KEY`, 
+            Authorization: `Bearer  REACT_APP_OPENAI_API_KEY`, 
           },
         }
       );
@@ -84,6 +86,18 @@ const OpenAIChat = () => {
         ☰ {/* Button to open and close the sidebar */}
       </button>
 
+      <Link to="/">
+        <button className="image-navbar-home-button">
+          <img 
+            src={drpepeailogo} 
+            height={28} 
+            width={28} 
+            alt="drpepe logo" 
+            className="image-navbar-home" 
+          />
+        </button>
+      </Link>
+
       {/* Main Content */}
       <div className={`main-content ${isSidebarOpen ? 'shifted' : ''}`}>
 
@@ -101,9 +115,11 @@ const OpenAIChat = () => {
               </div>
             </div>
           ))}
-        </div>
 
-     
+
+
+
+        </div>
         <div className={`input-container ${isSidebarOpen ? 'shifted' : ''}`}>
           <textarea
             value={input}
@@ -121,6 +137,12 @@ const OpenAIChat = () => {
           <div className='copy-bottom'> DrPepe.Ai may make mistakes. Please consider verifying important information.</div>
 
         </div>
+
+     
+
+
+
+
       </div>
     </div>
   );

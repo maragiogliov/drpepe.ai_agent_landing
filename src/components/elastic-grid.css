@@ -1,0 +1,162 @@
+/* Container to wrap the grid and text */
+  .container {
+    position: relative;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+  }
+  /* Elastic grid styles */
+  .elastic-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Grid acts as the interactive background */
+  }
+  .grid-item {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+    transition: transform 0.5s ease-out;
+    z-index: -10;
+
+  }
+  .capsule-image-container{
+    border: 2px solid red;
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    top: 0%;
+    left:0%;
+    z-index: 10; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7rem;
+  }
+  .capsulepepe{
+    width: 60%;
+    height: auto;
+  }
+  /* Overlay text styles */
+
+  .landing-text-container{
+    border: 2px solid red;
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 4rem;
+    padding-bottom: 31rem;
+    padding-left: 12.5%;
+  }
+  .overlay-text-title {
+    position: relative;
+    font-size: 48px;
+    font-weight: bold;
+    z-index: 10; 
+    color: #D1D1D1;
+    letter-spacing: 2px;
+    font-family: 'Cascadia Code',monospace;
+  }
+  .overlay-text-subtitle-one {
+    position: relative;
+ 
+    color: #D1D1D1;
+    font-family: 'Cascadia Code',monospace;
+    font-size: 16px;
+    font-weight: 400;
+    z-index: 10; /* Ensure text is above the grid */
+  }
+  .overlay-text-subtitle-two{
+    position: relative;
+    bottom: 0;
+    color: #D1D1D1;
+    font-family: 'Cascadia Code',monospace;
+    font-size: 16px;
+    font-weight: 400;
+    z-index: 10; /* Ensure text is above the grid */
+   
+  }
+  .square-arrow-text-container{
+      position: relative;
+      z-index: 10; /* Ensure text is above the grid */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-family: 'Cascadia Code',monospace;
+      margin-top: 15%;
+      margin-left:40%;
+  }
+  .squarearrow{
+    height: 18px;
+    padding-bottom: 6px;
+  }
+  .overlay-text-subtitle-three{
+    color: #D1D1D1;
+    font-family: 'Cascadia Code',monospace;
+    font-size: 1vw;
+    font-weight: 400;
+    margin-right: 8px;
+    letter-spacing: 0.2rem;
+    border-bottom: 1px solid #D1D1D1; 
+    padding: 0px 6px 6px 6px;
+
+
+  }  
+  /* Positioning words in each corner */
+  .corner-text {
+    position: absolute;
+    color: #D1D1D1;
+    font-size: 1rem;
+    font-family: 'Cascadia Code',monospace;
+    font-weight:400;
+    z-index: 10000;
+  }
+  .top-left {
+    top: 16px;
+    left: 16px;
+  }
+  .top-right {
+    top: 16px;
+    right: 16px;
+  }
+  .bottom-left {
+    bottom: 16px;
+    left: 16px;
+  }
+  .bottom-left-two{
+    bottom: 16px;
+    left: 120px;
+  }
+  .bottom-right {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  /* Make it responsive */
+  @media (max-width: 768px) {
+    .corner-text {
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .corner-text {
+      font-size: 1rem; /* Adjust further for very small screens */
+    }
+  
+  }
+  @media (width <= 799px) {
+
+
+
+
+    }

@@ -11,7 +11,7 @@ const OpenAIAPIDetails = () => {
       try {
         const res = await axios.get("https://api.openai.com/v1/dashboard/billing/subscription", {
           headers: {
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer REACT_APP_OPENAI_API_KEY`,
           },
         });
 

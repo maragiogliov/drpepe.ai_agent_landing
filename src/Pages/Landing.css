@@ -1,0 +1,121 @@
+.landing_main_container h1{
+    font-family: 'Open Sans', sans-serif !important;
+    margin-bottom: 0px;
+    font-size: 42px;
+}
+
+.landing_main_container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    box-sizing: border-box;  /* This makes sure padding is included within the width */
+}
+.landing_buy_img_container{
+    width: 375px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+
+}
+.landing_buy_img_container h3{
+    padding-right: 1rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.image_logo_landing{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.landing_subtitle_image{
+    width: 375px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    line-height: 1.2;
+
+}
+.landing_subtitle_image h3{
+    margin: 0;
+    font-size: 22px;
+}
+.landing_cta_container{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.landing_cta_button{
+    width: 175px;
+    height: 50px;
+    padding: 0.3rem;
+    background-color: transparent;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.landing_cta_button{
+    width: 175px;
+    height: 50px;
+    padding: 0.3rem;
+    background-color: transparent;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.landing_cta_button:hover{
+    background-color: #131313;
+    border-color: rgb(202, 202, 202);
+
+}
+
+.landing_socials_container_telegram, .landing_socials_container_docs{
+    width: 375px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.landing_socials_container_img_text{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.landing_socials_container_img_text h4{
+    margin: 8px;
+}
+.landing_socials_name{
+    width: 120px;
+   
+
+}
+.landing_socials_name h4{
+    margin: 8px;
+}
+
+
+.elastic_grid{
+    z-index: 99999;
+}
