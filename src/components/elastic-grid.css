@@ -23,8 +23,13 @@
     z-index: -10;
 
   }
+  .logo-wired{
+    position: absolute;
+    top: 45px;
+    right: 45px;
+  }
   .capsule-image-container{
-    border: 2px solid red;
+
     position: absolute;
     height: 100vh;
     width: 50vw;
@@ -35,16 +40,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 7rem;
+    padding-top: 20%;
+    padding-left: 10%;
+
   }
   .capsulepepe{
-    width: 60%;
-    height: auto;
+    width: 70%;
+    height: auto; 
+    z-index: 10;
   }
   /* Overlay text styles */
-
   .landing-text-container{
-    border: 2px solid red;
+
     position: absolute;
     height: 100vh;
     width: 50vw;
@@ -54,8 +61,8 @@
     align-items: flex-start;
     justify-content: center;
     padding: 4rem;
-    padding-bottom: 31rem;
-    padding-left: 12.5%;
+    padding-left: 0%;
+    padding-bottom: 22.5%;
   }
   .overlay-text-title {
     position: relative;
@@ -74,44 +81,62 @@
     font-size: 16px;
     font-weight: 400;
     z-index: 10; /* Ensure text is above the grid */
+    margin-bottom: 5rem;
   }
-  .overlay-text-subtitle-two{
-    position: relative;
-    bottom: 0;
-    color: #D1D1D1;
-    font-family: 'Cascadia Code',monospace;
-    font-size: 16px;
-    font-weight: 400;
-    z-index: 10; /* Ensure text is above the grid */
-   
+  .agents-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .square-arrow-text-container{
-      position: relative;
-      z-index: 10; /* Ensure text is above the grid */
+
+      font-family: 'Cascadia Code',monospace;
       display: flex;
       flex-direction: row;
       align-items: center;
-      font-family: 'Cascadia Code',monospace;
-      margin-top: 15%;
-      margin-left:40%;
+      margin-bottom: 2rem;
+
+  }
+  .animal-text{
+    color: #d1d1d180 !important;
+    border-bottom: 1px solid #d1d1d180 !important;
+  }
+  .animal-arrow{
+    color: #d1d1d180 !important;
   }
   .squarearrow{
     height: 18px;
     padding-bottom: 6px;
   }
   .overlay-text-subtitle-three{
+    min-width: 240px;
     color: #D1D1D1;
     font-family: 'Cascadia Code',monospace;
-    font-size: 1vw;
+    font-size: 16px;
     font-weight: 400;
     margin-right: 8px;
     letter-spacing: 0.2rem;
     border-bottom: 1px solid #D1D1D1; 
     padding: 0px 6px 6px 6px;
+    text-align: end;
 
 
   }  
-  /* Positioning words in each corner */
+  /* footer */
+  .landing-cta-container{
+      position: absolute;
+      bottom: 3%;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      color: #D1D1D1;
+      font-family: 'Cascadia Code',monospace;
+
+      width: 100%;
+  }
+  /* Positioning L's in each corner */
   .corner-text {
     position: absolute;
     color: #D1D1D1;
@@ -141,22 +166,38 @@
     right: 16px;
   }
 
-  /* Make it responsive */
-  @media (max-width: 768px) {
-    .corner-text {
-      font-size: 1.2rem; /* Adjust font size for smaller screens */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .corner-text {
-      font-size: 1rem; /* Adjust further for very small screens */
-    }
-  
-  }
+
   @media (width <= 799px) {
 
+    .capsule-image-container{
+      height: 100vh;
+      width: 100vw;
+      padding-bottom: 100%;
+      padding-left: 25%;
 
+    }
+    .capsulepepe{
+      width: 80%;
+      height: auto;
+    }
+    .landing-text-container{
+      height: 100vh;
+      width: 100vw;
+      padding-left: 5%;
+      padding-bottom:90%;
+    }
+    .agents-container{
+    padding-top: 40%;
+    }
+    .square-arrow-text-container{
+  
+      margin-left:5%;
+      margin-bottom: 5%;
+
+    }
+    .landing-cta-container{
+      display: none;
+    }
 
 
     }
