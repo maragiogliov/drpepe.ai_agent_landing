@@ -261,16 +261,46 @@
     }
     .container-top-mobile{
       position: absolute;
-      top: 0;
-      height: 45%;
+      display: flex ;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 50%;
       width: 100%;
-      border: 2px solid gold;
+      /* border: 2px solid gold;*/
       padding: 0 5% 5% 5%;
     }
-    
+    .mobile-logo-wired-container{
+      width: 100%;
+      /*border: 2px solid rgb(76, 0, 255);*/
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .mobile-title-subtitle-container{
+      width: 100%;
+      /*border: 2px solid rgb(255, 0, 170);*/
+      display: flex;
+      flex-direction: column;
+    }
+    .mobile-title{
+      width: 50%;
+    }
+    .mobile-subtitle{
+      color: #D1D1D1;
+      font-family: 'Cascadia Code',monospace;
+      font-size: 1.8vh;
+    }
+    .mobile-pepe-capsule-container{
+      width: 100%;
+      /*border: 2px solid grey;*/
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+    }
     .agents-container{
       width: 100%;
-      border: 2px solid blue;
+      /*border: 2px solid blue;*/
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -281,9 +311,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: end;
-    border: 2px solid gold;
+    /*border: 2px solid gold;*/
     width: 60%;
     font-size: 1.8vh;
+    margin-bottom: 1rem;
   }
   .agent-text-mobile{
     color: #D1D1D1;
@@ -292,22 +323,23 @@
 
   }
 
-  .animal-text-mobile{
-    color: #5C5C5C;
-  }
-
-
+    .animal-text-mobile{
+      color: #5C5C5C;
+    }
     .landing-cta-mobile-container{
       position: absolute;
-      border: 2px solid red;
+      /*border: 2px solid red;*/
       bottom: 0px;
-      height: 45%;
+      height: 50%;
       width: 100%;
       padding: 0 5% 5% 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
     }
     .cta-container-mobile-first{
       width: 100%;
-      border:2px solid green;
+      /*border:2px solid green;*/
       margin-bottom: 5%;
 
     }
@@ -320,13 +352,13 @@
     .ca-container-mobile{
       width: 60%;
       word-wrap: break-word;
-      border: 2px solid red;
+     /* border: 2px solid red;*/
 
 
     }
     .cta-docs-mobile{
       width: 100%;
-      border: 2px solid rgb(0, 208, 255);
+     /* border: 2px solid rgb(0, 208, 255);*/
       display: flex;
       flex-direction: column;
       align-items: end;

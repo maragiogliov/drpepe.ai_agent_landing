@@ -165,28 +165,28 @@ const ElasticGridDeformation = () => {
 
       {/* Top mobile */}
       <div className="container-top-mobile">
-          <div className="logo-wired">
-            <img src={drpepelogowired} alt="drpepe logo" width={70} />
+          <div className="mobile-logo-wired-container">
+            <img src={drpepelogowired} alt="drpepe logo" width={50} />
           </div>
           <TypewriterEffect />
 
 
         <div className="">
 
-          <div>
+          <div className="mobile-title-subtitle-container">
 
-            <div className="">
-              <img src={drpepeai_title} alt="drpepe title" />
+            <div className="mobile-title"> 
+              <img src={drpepeai_title} alt="drpepe title" width={200} />
             </div>
 
-            <div className="">
+            <div className="mobile-subtitle">
               An AI-Powered Smart Agent designed to help you live forever
             </div>
             
           </div>
 
 
-          <div className="">
+          <div className=" mobile-pepe-capsule-container">
             <img src={capsulepepe_gif} alt="capsulepepe" className="" width={200} />
           </div>
 
