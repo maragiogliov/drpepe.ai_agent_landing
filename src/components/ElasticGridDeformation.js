@@ -221,10 +221,10 @@ const ElasticGridDeformation = () => {
       <div className="landing-cta-mobile-container">
 
       <div className="cta-container-mobile-first">
-            <div  className="text-cta-mobile">﹝Buy on Solana﹞</div>
-            <div  className="text-cta-mobile">﹝Follow on X @drpepeai﹞</div>
-            <div className="text-cta-mobile">﹝Join Telegram﹞</div>
-            <div  className="text-cta-mobile">﹝Become an Ambassador﹞</div>
+            <div  className="text-cta-mobile parenthesis-text">﹝Buy on Solana﹞</div>
+            <div  className="text-cta-mobile parenthesis-text">﹝Follow on X @drpepeai﹞</div>
+            <div className="text-cta-mobile parenthesis-text">﹝Join Telegram﹞</div>
+            <div  className="text-cta-mobile parenthesis-text">﹝Become an Ambassador﹞</div>
       </div>
 
 

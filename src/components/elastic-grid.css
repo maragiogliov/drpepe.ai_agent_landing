@@ -347,7 +347,7 @@
     .cta-container-mobile-first{
       width: 100%;
       /*border:2px solid green;*/
-      margin-bottom: 5%;
+      margin-bottom: 10%;
 
     }
     .text-cta-mobile{
@@ -355,6 +355,10 @@
       font-family: 'Cascadia Code',monospace;
       padding-bottom: 5%;
       font-size: 1.8vh;
+      
+    }
+    .parenthesis-text{
+      margin-left: -4px;
     }
     .ca-container-mobile{
       width: 60%;
