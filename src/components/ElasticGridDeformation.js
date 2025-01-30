@@ -2,8 +2,8 @@ import React, { useRef, useEffect } from "react";
 
 import "./elastic-grid.css";
 import capsulepepe_gif from "../assets/capsulepepe_gif.gif";
-import squarearrow from "../assets/square-arrow.svg";
-import squarearrowgrey from "../assets/square-arrow-grey.svg";
+import squarearrow from "../assets/up-right-arrow-grey.svg";
+import squarearrowgrey from "../assets/up-right-arrow-grey-opaque.svg";
 import l_bottom_left from "../assets/l_bottom_left.svg";
 import l_bottom_right from "../assets/l_bottom_right.svg";
 import l_top_right from "../assets/l_top_right.svg";
@@ -195,17 +195,20 @@ const ElasticGridDeformation = () => {
 
             <div className="mobile-agent-text-arrow-container">
               <div className="agent-text-mobile">Human Agent v.0 1</div>
-              <img src={squarearrow} alt="squarearrow" className="" width={15} />
+              <img src={squarearrow} alt="squarearrow" className="" width={10} />
+              ↗
             </div>
 
             <div className="mobile-agent-text-arrow-container">
-              <div className="agent-text-mobile">Dog Agent v.0 1</div>
-              <img src={squarearrowgrey} alt="squarearrow" className="" width={15} />
+              <div className="agent-text-mobile animal-text-mobile">Dog Agent v.0 1</div>
+              <img src={squarearrowgrey} alt="squarearrow" className="" width={10} />
+              ↗
             </div>
 
             <div className="mobile-agent-text-arrow-container">
-              <div className="agent-text-mobile">Cat Agent v.0 1</div>
-              <img src={squarearrowgrey} alt="squarearrow" className="" width={15} />
+              <div className="agent-text-mobile animal-text-mobile">Cat Agent v.0 1</div>
+              <img src={squarearrowgrey} alt="squarearrow" className="" width={10} />
+              ↗
             </div>
 
           </div>
