@@ -187,7 +187,7 @@ const ElasticGridDeformation = () => {
 
 
           <div className=" mobile-pepe-capsule-container">
-            <img src={capsulepepe_gif} alt="capsulepepe" className="" width={200} />
+            <img src={capsulepepe_gif} alt="capsulepepe" className="mobile-capsule" />
           </div>
 
 
