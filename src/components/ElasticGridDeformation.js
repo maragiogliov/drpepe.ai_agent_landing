@@ -65,6 +65,13 @@ const ElasticGridDeformation = () => {
   return (
     <div className="container">
 
+
+      {/* Grid */}
+      <div ref={gridRef} className="elastic-grid">
+        {[...Array(64)].map((_, index) => (
+          <div key={index} className="grid-item" />
+        ))}
+      </div>
       {/* 4 Corner Words */}
       <div className="corner-text bottom-left">
         <img src={l_bottom_left} alt="l" height={15} />
@@ -78,63 +85,51 @@ const ElasticGridDeformation = () => {
       <div className="corner-text top-right">
         <img src={l_top_right} alt="l" height={15} />
       </div>
+      {/* Top desktop */}
+      <div className="container-top-desktop">
+
+            <div className="capsule-image-container">
+              <img src={capsulepepe_gif} alt="capsulepepe" className="capsulepepe" />
+              <TypewriterEffect />
+            </div>
+
+            <div className="landing-text-container">
+
+              <div className="logo-wired">
+                <img src={drpepelogowired} alt="drpepe logo" width={70} />
+              </div>
+
+              <div className="overlay-text-title">
+                <img src={drpepeai_title} alt="drpepe title" />
+              </div>
+
+              <div className="overlay-text-subtitle-one">
+                An AI-Powered Smart Agent designed to help you live forever
+              </div>
 
 
-<div className="container-top-desktop">
+              <div className="agents-container">
 
-      <div className="capsule-image-container">
-        <img src={capsulepepe_gif} alt="capsulepepe" className="capsulepepe" />
-        <TypewriterEffect />
+                <div className="square-arrow-text-container">
+                  <div className="overlay-text-subtitle-three">Human Agent v.0 1</div>
+                  <img src={squarearrow} alt="squarearrow" className="squarearrow" />
+                </div>
+
+                <div className="square-arrow-text-container">
+                  <div className="overlay-text-subtitle-three animal-text">Dog Agent v.0 1</div>
+                  <img src={squarearrowgrey} alt="squarearrow" className="squarearrow animal-arrow" />
+                </div>
+
+                <div className="square-arrow-text-container">
+                  <div className="overlay-text-subtitle-three animal-text">Cat Agent v.0 1</div>
+                  <img src={squarearrowgrey} alt="squarearrow" className="squarearrow animal-arrow" />
+                </div>
+
+              </div>
+
+            </div>
       </div>
-
-      <div className="landing-text-container">
-
-        <div className="logo-wired">
-          <img src={drpepelogowired} alt="drpepe logo" width={70} />
-        </div>
-
-        <div className="overlay-text-title">
-          <img src={drpepeai_title} alt="drpepe title" />
-        </div>
-
-        <div className="overlay-text-subtitle-one">
-          An AI-Powered Smart Agent designed to help you live forever
-        </div>
-
-
-        <div className="agents-container">
-
-          <div className="square-arrow-text-container">
-            <div className="overlay-text-subtitle-three">Human Agent v.0 1</div>
-            <img src={squarearrow} alt="squarearrow" className="squarearrow" />
-          </div>
-
-          <div className="square-arrow-text-container">
-            <div className="overlay-text-subtitle-three animal-text">Dog Agent v.0 1</div>
-            <img src={squarearrowgrey} alt="squarearrow" className="squarearrow animal-arrow" />
-          </div>
-
-          <div className="square-arrow-text-container">
-            <div className="overlay-text-subtitle-three animal-text">Cat Agent v.0 1</div>
-            <img src={squarearrowgrey} alt="squarearrow" className="squarearrow animal-arrow" />
-          </div>
-
-        </div>
-
-      </div>
-</div>
-
-
-
-
-
-
-      <div ref={gridRef} className="elastic-grid">
-        {[...Array(64)].map((_, index) => (
-          <div key={index} className="grid-item" />
-        ))}
-      </div>
-
+      {/* Bottom desktop */}
       <div className="landing-cta-container">
 
 
@@ -166,11 +161,61 @@ const ElasticGridDeformation = () => {
         </div>
 
 
-     </div>
+      </div>
+
+      {/* Top mobile */}
+      <div className="container-top-mobile">
+          <div className="logo-wired">
+            <img src={drpepelogowired} alt="drpepe logo" width={70} />
+          </div>
+          <TypewriterEffect />
 
 
+        <div className="">
 
-  <div className="landing-cta-mobile-container">
+          <div>
+
+            <div className="">
+              <img src={drpepeai_title} alt="drpepe title" />
+            </div>
+
+            <div className="">
+              An AI-Powered Smart Agent designed to help you live forever
+            </div>
+            
+          </div>
+
+
+          <div className="">
+            <img src={capsulepepe_gif} alt="capsulepepe" className="" width={200} />
+          </div>
+
+
+          <div className="agents-container">
+
+            <div className="mobile-agent-text-arrow-container">
+              <div className="agent-text-mobile">Human Agent v.0 1</div>
+              <img src={squarearrow} alt="squarearrow" className="" width={15} />
+            </div>
+
+            <div className="mobile-agent-text-arrow-container">
+              <div className="agent-text-mobile">Dog Agent v.0 1</div>
+              <img src={squarearrowgrey} alt="squarearrow" className="" width={15} />
+            </div>
+
+            <div className="mobile-agent-text-arrow-container">
+              <div className="agent-text-mobile">Cat Agent v.0 1</div>
+              <img src={squarearrowgrey} alt="squarearrow" className="" width={15} />
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* Bottom mobile */}
+      <div className="landing-cta-mobile-container">
 
       <div className="cta-container-mobile-first">
             <div  className="text-cta-mobile">﹝Buy on Solana﹞</div>
@@ -186,11 +231,7 @@ const ElasticGridDeformation = () => {
       </div>
 
       <div  className="text-cta-mobile cta-docs-mobile">﹝Docs﹞</div>
-  </div>
-
-
-
-
+      </div>
 
     </div>
   );

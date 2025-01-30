@@ -1,4 +1,4 @@
-/* Container to wrap the grid and text */
+  /* Container to wrap the grid and text */
   .container {
     position: relative;
     height: 100vh;
@@ -125,7 +125,7 @@
   /* footer */
   .landing-cta-container{
       position: absolute;
-      bottom: 3%;
+      bottom: 4%;
 
       display: flex;
       flex-direction: row;
@@ -158,21 +158,17 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
- 
     width: 50%;
   }
   .solana-logo-buy-container{
     display: flex;
     flex-direction: row;
     align-items: center;
-
     padding-right: 3rem;
   }
-
   .footer-link-text{
-margin-right: 2rem;
+  margin-right: 2rem;
   }
-
   /* Positioning L's in each corner */
   .corner-text {
     position: absolute;
@@ -236,6 +232,7 @@ margin-right: 2rem;
 
 
   @media (width <= 1250px){
+
     .socials-ambassador-docs-container{
       display: flex;
       flex-direction: column-reverse;
@@ -246,17 +243,15 @@ margin-right: 2rem;
       margin-left: 0rem;
       width: 100%;
     }
-    .footer-link-text{
+    .footer-link-text {
       margin-top: 3rem;
 
-        }
+    }
 
   }
 
 
   @media (width <= 840px) {
-
-
 
     .landing-cta-container{
       display: none;
@@ -264,13 +259,41 @@ margin-right: 2rem;
     .container-top-desktop{
       display: none;
     }
-
+    .container-top-mobile{
+      position: absolute;
+      top: 0;
+      height: 45%;
+      width: 100%;
+      border: 2px solid gold;
+      padding: 0 5% 5% 5%;
+    }
+    
+    .agents-container{
+      width: 100%;
+      border: 2px solid blue;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
   
+  .mobile-agent-text-arrow-container{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid gold;
+    width: 50%;
+  }
+  .agent-text-mobile{
+    color: #D1D1D1;
+    font-family: 'Cascadia Code',monospace;
+
+  }
+
+
     .landing-cta-mobile-container{
       position: absolute;
       border: 2px solid red;
       bottom: 0px;
-      height: 40%;
+      height: 45%;
       width: 100%;
       padding: 0 5% 5% 5%;
     }
