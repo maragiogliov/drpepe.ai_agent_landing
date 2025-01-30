@@ -256,71 +256,49 @@ margin-right: 2rem;
 
   @media (width <= 840px) {
 
-    .capsule-image-container{
-      height: 100vh;
-      width: 100vw;
-      right: 0;
-      padding:0px;
 
-    }
-    .capsulepepe{
-      width: 60%;
-     
-      margin-left: 8rem;
-      margin-bottom: 12rem;
-    }
-    .landing-text-container{
-      height: 100vh;
-      width: 100vw;
-      padding-left: 5%;
-      justify-content: flex-start;
-    }
-    .agents-container{
-    padding-top: 4rem;
-    }
-    .overlay-text-subtitle-one{
-      font-size: 13px;
-    }
-    .overlay-text-subtitle-three, .animal-text{
-      font-size: 12px !important;
-    }
-    .overlay-text-subtitle-three{
-      max-width: 190px !important;
-    }
-    .square-arrow-text-container{
-  
-      margin-left:5%;
-      margin-bottom: 5%;
 
-    }
     .landing-cta-container{
       display: none;
     }
+    .container-top-desktop{
+      display: none;
+    }
+
+  
     .landing-cta-mobile-container{
       position: absolute;
       border: 2px solid red;
-      bottom: 0;
-      height: 20%;
+      bottom: 0px;
+      height: 40%;
       width: 100%;
+      padding: 0 5% 5% 5%;
     }
-  
+    .cta-container-mobile-first{
+      width: 100%;
+      border:2px solid green;
+      margin-bottom: 5%;
+
+    }
     .text-cta-mobile{
       color: #D1D1D1;
       font-family: 'Cascadia Code',monospace;
-      padding-left: 5%;
-      padding-bottom: 4rem;
+      padding-bottom: 5%;
+      font-size: 1.8vh;
     }
     .ca-container-mobile{
-      width: 20rem;
+      width: 60%;
       word-wrap: break-word;
       border: 2px solid red;
-      padding-left: 8%;
+
 
     }
     .cta-docs-mobile{
-      position: relative;
-      left: 80%;
-      bottom: 10%;
+      width: 100%;
+      border: 2px solid rgb(0, 208, 255);
+      display: flex;
+      flex-direction: column;
+      align-items: end;
     }
 
 

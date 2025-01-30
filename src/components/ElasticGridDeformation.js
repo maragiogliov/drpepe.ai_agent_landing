@@ -65,6 +65,23 @@ const ElasticGridDeformation = () => {
   return (
     <div className="container">
 
+      {/* 4 Corner Words */}
+      <div className="corner-text bottom-left">
+        <img src={l_bottom_left} alt="l" height={15} />
+      </div>
+      <div className="corner-text bottom-right">
+        <img src={l_bottom_right} alt="l" height={15} />
+      </div>
+      <div className="corner-text top-left">
+        <img src={l_top_left} alt="l" height={15} />
+      </div>
+      <div className="corner-text top-right">
+        <img src={l_top_right} alt="l" height={15} />
+      </div>
+
+
+<div className="container-top-desktop">
+
       <div className="capsule-image-container">
         <img src={capsulepepe_gif} alt="capsulepepe" className="capsulepepe" />
         <TypewriterEffect />
@@ -105,20 +122,12 @@ const ElasticGridDeformation = () => {
         </div>
 
       </div>
+</div>
 
-      {/* 4 Corner Words */}
-      <div className="corner-text bottom-left">
-        <img src={l_bottom_left} alt="l" height={15} />
-      </div>
-      <div className="corner-text bottom-right">
-        <img src={l_bottom_right} alt="l" height={15} />
-      </div>
-      <div className="corner-text top-left">
-        <img src={l_top_left} alt="l" height={15} />
-      </div>
-      <div className="corner-text top-right">
-        <img src={l_top_right} alt="l" height={15} />
-      </div>
+
+
+
+
 
       <div ref={gridRef} className="elastic-grid">
         {[...Array(64)].map((_, index) => (
@@ -157,15 +166,23 @@ const ElasticGridDeformation = () => {
         </div>
 
 
-      </div>
+     </div>
+
+
 
   <div className="landing-cta-mobile-container">
-      <div  className="text-cta-mobile">﹝Buy on Solana﹞</div>
-      <div  className="text-cta-mobile">﹝Follow on X @drpepeai﹞</div>
-      <div className="text-cta-mobile">﹝Join Telegram﹞</div>
-      <div  className="text-cta-mobile">﹝Become an Ambassador﹞</div>
+
+      <div className="cta-container-mobile-first">
+            <div  className="text-cta-mobile">﹝Buy on Solana﹞</div>
+            <div  className="text-cta-mobile">﹝Follow on X @drpepeai﹞</div>
+            <div className="text-cta-mobile">﹝Join Telegram﹞</div>
+            <div  className="text-cta-mobile">﹝Become an Ambassador﹞</div>
+      </div>
+
+
+
       <div className="ca-container-mobile">
-      <div  className="text-cta-mobile ca-mobile">CA:BrYANThKaAbjZZH5XWLrw26NzMbfUNmBwbZiMe4Fj5Mk</div>
+        <div  className="text-cta-mobile ca-mobile">CA:BrYANThKaAbjZZH5XWLrw26NzMbfUNmBwbZiMe4Fj5Mk</div>
       </div>
 
       <div  className="text-cta-mobile cta-docs-mobile">﹝Docs﹞</div>
