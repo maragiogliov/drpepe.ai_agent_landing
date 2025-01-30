@@ -166,7 +166,7 @@ const ElasticGridDeformation = () => {
       {/* Top mobile */}
       <div className="container-top-mobile">
           <div className="mobile-logo-wired-container">
-            <img src={drpepelogowired} alt="drpepe logo" width={50} />
+            <img src={drpepelogowired} alt="drpepe logo" width={35} />
           </div>
           <TypewriterEffect />
 

@@ -268,7 +268,7 @@
       height: 50%;
       width: 100%;
       /* border: 2px solid gold;*/
-      padding: 0 5% 5% 5%;
+      padding: 5% 5% 5% 5%;
     }
     .mobile-logo-wired-container{
       width: 100%;
@@ -276,6 +276,8 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      padding-top: 3%;
+      padding-right: 5%;
     }
     .mobile-title-subtitle-container{
       width: 100%;
@@ -312,7 +314,7 @@
     align-items: center;
     justify-content: end;
     /*border: 2px solid gold;*/
-    width: 60%;
+
     font-size: 1.8vh;
     margin-bottom: 1rem;
   }
@@ -332,7 +334,7 @@
       bottom: 0px;
       height: 50%;
       width: 100%;
-      padding: 0 5% 5% 5%;
+      padding: 0% 5% 5% 5%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
