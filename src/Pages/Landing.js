@@ -4,7 +4,7 @@ import { gsap } from 'gsap';
 
 import './Landing.css';
 import drpepeailogo from '../assets/drpepeai-logo.svg';
-import solanalogo from '../assets/solana_logo.svg';
+import solanalogo from '../assets/solana_logo_with_text.svg';
 import capsulepepe from '../assets/capsulepepe_landing.jpg';
 
 

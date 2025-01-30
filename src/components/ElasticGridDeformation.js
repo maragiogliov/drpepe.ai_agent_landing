@@ -11,6 +11,7 @@ import l_top_left from "../assets/l_top_left.svg";
 import drpepeai_title from "../assets/drpepea_title_vipnagorgialla.svg";
 import TypewriterEffect from "./TypewriterEffect;";
 import drpepelogowired from "../assets/drpepelogo-wired.svg";
+import solanalogo_circle from "../assets/solanalogo_circle.svg"
 
 const ElasticGridDeformation = () => {
   const gridRef = useRef(null);
@@ -126,13 +127,54 @@ const ElasticGridDeformation = () => {
       </div>
 
       <div className="landing-cta-container">
-        <div>﹝Join Telegram﹞</div>
-        <div>﹝Follow on X @drpepeai﹞</div>
-        <div>﹝Become an Ambassador﹞</div>
-        <div>﹝Docs﹞</div>
-        <div> Buy on Solana</div>
-        <div>CA: BrYANThKaAbjZZH5XWLrw26NzMbfUNmBwbZiMe4Fj5Mk</div>
+
+
+
+
+        <div className="socials-ambassador-docs-container">
+                <div className="footer-socials-container">
+                  <div className="footer-link-text">﹝Join Telegram﹞</div>
+                  <div className="footer-link-text">﹝X @drpepeai﹞</div>
+                </div>
+
+                <div className="footer-ambassador-docs-container">
+                        <div className="footer-link-text">﹝Become an Ambassador﹞</div>
+                        <div className="footer-link-text">﹝Docs﹞</div>
+                </div>
+        </div>
+
+
+
+        <div  className="footer-ca-solana-container">
+          <div className="solana-logo-buy-container">
+
+            <img src={solanalogo_circle} alt="solana logo" height={22} />
+            <div className="">Buy on Solana</div>
+
+          </div>
+
+          <div>CA: BrYANThKaAbjZZH5XWLrw26NzMbfUNmBwbZiMe4Fj5Mk</div>
+        </div>
+
+
       </div>
+
+  <div className="landing-cta-mobile-container">
+      <div  className="text-cta-mobile">﹝Buy on Solana﹞</div>
+      <div  className="text-cta-mobile">﹝Follow on X @drpepeai﹞</div>
+      <div className="text-cta-mobile">﹝Join Telegram﹞</div>
+      <div  className="text-cta-mobile">﹝Become an Ambassador﹞</div>
+      <div className="ca-container-mobile">
+      <div  className="text-cta-mobile ca-mobile">CA:BrYANThKaAbjZZH5XWLrw26NzMbfUNmBwbZiMe4Fj5Mk</div>
+      </div>
+
+      <div  className="text-cta-mobile cta-docs-mobile">﹝Docs﹞</div>
+  </div>
+
+
+
+
+
     </div>
   );
 };

@@ -1,7 +1,7 @@
 .typewriter-container {
     background-color: transparent; /* Dark background for contrast */
     font-family: "Cascadia Code", monospace;
-    font-size: 11.2px;
+    font-size: 0.655vw;
     line-height: 1.5;
  
     white-space: pre-wrap;
@@ -34,19 +34,19 @@
 .grey-40 { color: #bebebe17; } 
 .grey-50 { color: #bebebe; } 
 
-@media (width <= 799px) {
+
+
+@media (width <= 840px) {
   .typewriter-container {
     background-color: transparent; /* Dark background for contrast */
     font-family: "Cascadia Code", monospace;
-    font-size: 5px;
-
- 
-  min-height: 100vh;
+    min-height: 100vh;
     top:0;
     left: 50%;
-    right: 5%;
-
+    right: 0%;
     z-index: 1;
+    font-size: 1vw;
+
 
   }
 }
