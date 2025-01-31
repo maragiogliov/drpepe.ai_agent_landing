@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from "react";
+import { Link, useNavigate } from 'react-router-dom';
+import { gsap } from 'gsap';
 
-import "./elastic-grid.css";
+import "./hero.css";
 import capsulepepe_gif from "../assets/capsulepepe_gif.gif";
 import squarearrow from "../assets/up-right-arrow-grey.svg";
 import squarearrowgrey from "../assets/up-right-arrow-grey-opaque.svg";
@@ -9,12 +11,14 @@ import l_bottom_right from "../assets/l_bottom_right.svg";
 import l_top_right from "../assets/l_top_right.svg";
 import l_top_left from "../assets/l_top_left.svg";
 import drpepeai_title from "../assets/drpepea_title_vipnagorgialla.svg";
-import TypewriterEffect from "./TypewriterEffect;";
+import TypewriterEffect from "./TypewriterEffect";
 import drpepelogowired from "../assets/drpepelogo-wired.svg";
 import solanalogo_circle from "../assets/solanalogo_circle.svg"
 
-const ElasticGridDeformation = () => {
+const Hero = () => {
   const gridRef = useRef(null);
+  const navigate = useNavigate();
+
 
 
   useEffect(() => {
@@ -42,6 +46,7 @@ const ElasticGridDeformation = () => {
       });
     };
 
+
     const handleMouseLeave = () => {
       gridItems.forEach((item) => {
         item.style.transform = "translate(0, 0)";
@@ -51,16 +56,28 @@ const ElasticGridDeformation = () => {
     document.addEventListener("mousemove", handleMouseMove);
     document.addEventListener("mouseleave", handleMouseLeave);
 
- 
-
- 
-
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
       document.removeEventListener("mouseleave", handleMouseLeave);
     
     };
   }, []);
+
+  const handleNavigate = (e) => {
+    e.preventDefault(); // Prevent the default navigation behavior of <Link>
+
+    // Create a fade-out animation for the entire container
+    gsap.to(".container", {
+      opacity: 0,
+      duration: 0.8,
+      onComplete: () => {
+        navigate("/openai-chat"); // Trigger navigation after the animation completes
+      },
+    });
+  };
+
+
+
 
   return (
     <div className="container">
@@ -111,7 +128,9 @@ const ElasticGridDeformation = () => {
               <div className="agents-container">
 
                 <div className="square-arrow-text-container">
+                <Link to="/openai-chat" onClick={handleNavigate}>
                   <div className="overlay-text-subtitle-three">Human Agent v.0 1</div>
+                </Link>
                   <img src={squarearrow} alt="squarearrow" className="squarearrow" />
                 </div>
 
@@ -137,7 +156,8 @@ const ElasticGridDeformation = () => {
 
         <div className="socials-ambassador-docs-container">
                 <div className="footer-socials-container">
-                  <div className="footer-link-text">﹝Join Telegram﹞</div>
+                  <div  className="footer-link-text ">﹝Join Telegram﹞</div>
+
                   <div className="footer-link-text">﹝X @drpepeai﹞</div>
                 </div>
 
@@ -240,4 +260,4 @@ const ElasticGridDeformation = () => {
   );
 };
 
-export default ElasticGridDeformation;
+export default Hero;
